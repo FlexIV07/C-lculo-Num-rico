@@ -55,8 +55,6 @@ class TresPontos:
         self.erros_absolutos = list()
         self.raizes_no_ponto = list()
 
-
-
     def slice_dos_pontos(self, tipo_de_divisao: str):
         if tipo_de_divisao == "INICIAL":
             self.pontos_divididos = self.pontos[0:3]
@@ -310,6 +308,9 @@ class QuatroPontos:
         
         raizes_x = [self.raizes_no_ponto[0][0], self.raizes_no_ponto[1][0], self.raizes_no_ponto[2][0]]
         raizes_y = [self.raizes_no_ponto[0][1], self.raizes_no_ponto[1][1], self.raizes_no_ponto[2][1]]
+
+        # raizes_x = [self.raizes_no_ponto[1][0], self.raizes_no_ponto[2][0]]
+        # raizes_y = [self.raizes_no_ponto[1][1], self.raizes_no_ponto[2][1]]
 
         plt.scatter(raizes_x,
                  raizes_y,
